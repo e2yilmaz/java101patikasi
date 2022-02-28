@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+        // DEGISKENLERI OLUSTUR
+        double p = 3.14;
+        int r;
+
+        // SCANNER SINIFINI TANIMLA
+        Scanner girdi = new Scanner(System.in);
+
+        // KULLANICIDAN DEGERLERI AL
+        System.out.print("Yaricapi Giriniz : ");
+        r = girdi.nextInt();
+        
+        double alan = p * r * r;
+        double cevre = 2 * p * r;
+
+        System.out.println("Dairenin Alani ;" + alan);
+        System.out.println("Dairenin Cevresi ;" + cevre);
+
+
+
+
+
+
+    }
+}
