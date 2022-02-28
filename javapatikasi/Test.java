@@ -12,7 +12,7 @@ public class Test {
         System.out.print("Tutar Giriniz : ");
         tutar = input.nextDouble();
 
-
+        kdvOrani = (tutar >= 1000) ? 0.08 : kdvOrani;
         kdvTutari = (kdvOrani * tutar);
         kdvliTutar = (kdvTutari + tutar);
 
@@ -20,6 +20,10 @@ public class Test {
         System.out.println("KDV Orani ;" + kdvOrani);
         System.out.println("KDV Tutari ;" + kdvTutari);
         System.out.println("KDV'li Tutar ;" + kdvliTutar);
+
+
+
+
 
     }
 }
