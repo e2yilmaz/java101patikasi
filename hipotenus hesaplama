@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+        // DEGISKENLERI OLUSTUR
+        double c;
+        int a,b;
+
+        // SCANNER SINIFINI TANIMLA
+        Scanner girdi = new Scanner(System.in);
+
+        // KULLANICIDAN DEGERLERI AL
+        System.out.print("1. Kenari Giriniz : ");
+        a = girdi.nextInt();
+        System.out.print("2. Kenari Giriniz : ");
+        b = girdi.nextInt();
+
+        c = Math.sqrt((a*a) +(b*b));
+
+        System.out.println("Hipotenus ;" + c);
+
+
+
+
+
+
+    }
+}
