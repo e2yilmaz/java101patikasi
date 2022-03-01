@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+
+        // DEGISKENLERI OLUSTUR
+        double kilo,boy;
+
+        // SCANNER SINIFINI TANIMLA
+        Scanner inp = new Scanner(System.in);
+
+        // KULLANICIDAN DEGERLERI AL
+        System.out.print("Boyunuzu (m biriminde) Giriniz : ");
+        boy = inp.nextDouble();
+        System.out.print("Kilonuzu (kg biriminde) Giriniz : ");
+        kilo = inp.nextDouble();
+
+        // FORMUL OLUSTUR
+        double vki = kilo / ( boy * boy );
+
+        // CIKTIYI ISTE
+        System.out.println("Vucut Kitle indeksiniz ;" + vki);
+
+
+
+
+
+
+
+    }
+}
