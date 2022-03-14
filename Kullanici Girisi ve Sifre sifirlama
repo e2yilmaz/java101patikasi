@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        String userName, password;
+        int select;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Kullanici Adiniz : ");
+        userName = inp.nextLine();
+
+        System.out.print("Sifrenizi Giriniz : ");
+        password = inp.nextLine();
+
+        if (userName.equals("patika") && password.equals("java123")){
+            System.out.println("Giris Yaptiniz ");
+        } {
+            System.out.println("Bilgileriniz Yanlis ! Sifrenizi Sifirlansin mi ? ");
+            System.out.println("1-Evet\n2-Hayir");
+            System.out.println("Seciminizi Yapiniz: ");
+            select = inp.nextInt();
+
+            Scanner input = new Scanner(System.in);
+
+            System.out.println("Yeni Sifrenizi Giriniz : ");
+            password = input.nextLine();
+
+           if (password.equals("java123")){
+               System.out.println("Sifreniz Olusturulamadi ! Lutfen Baska Sifre Giriniz : ");
+
+           }
+             else
+               System.out.println("Yeni Sifreniz Olusturuldu ");
+
+        }
+    }
+}
