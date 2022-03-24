@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int mat, fzk, kmy, msc, trk, toplam = 0;
+        double ortalama = 0;
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Matematik Notunuz: ");
+        mat = inp.nextInt();
+        if (!(mat <= 0 || mat >= 100)) {
+            toplam += mat;
+            ortalama++;
+
+        }
+        System.out.print("Fizik Notunuz;");
+        fzk = inp.nextInt();
+        if (!(fzk<= 0 || fzk >= 100)) {
+            toplam += fzk;
+            ortalama++;
+
+        }
+        System.out.print("Muzik Notunuz;");
+        msc = inp.nextInt();
+        if (!(msc <= 0 || msc >= 100)) {
+            toplam += msc;
+            ortalama++;
+        }
+        System.out.print("Kimya Notunuz: ");
+        kmy = inp.nextInt();
+        if (!(kmy <= 0 || kmy >= 100)) {
+            toplam += kmy;
+            ortalama++;
+        }
+        System.out.print("Turkce Notunuz: ");
+        trk = inp.nextInt();
+        if (!(trk <= 0 || trk >= 100)) {
+            toplam += trk;
+            ortalama++;
+        }
+        if (ortalama<=55){
+            System.out.println("Tebrikler Sinifi Gectiniz !");
+        }else{
+            System.out.println("Sinifta Kaldiniz.Seneye Gorusmek Uzere :) ");
+
+        }
+    }
+}
